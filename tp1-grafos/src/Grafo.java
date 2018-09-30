@@ -46,7 +46,7 @@ public abstract class Grafo {
 	}
 	
 	public boolean isRegular () {
-		for(int i=0; i<this.tam-1; i++) {
+		for(int i=1; i<this.tam-1; i++) {
 			if(this.getGrau(i)!=this.getGrau(i+1)) {
 				return false;
 			}
