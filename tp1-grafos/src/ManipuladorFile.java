@@ -57,6 +57,9 @@ public class ManipuladorFile {
 				
 				
 			}
+			System.out.println("Grafo gerado com suceso!!!!");
+			System.out.println("============================");
+			
 			buffRead.close();
 			
 		} catch (IOException e) {

@@ -39,7 +39,7 @@ public abstract class Grafo {
 	}
 	
 	public boolean isPendente (int v1) {
-		if(this.getGrau(v1-1)==1) {
+		if(this.getGrau(v1)==1) {
 			return true;
 		}
 		return false;
