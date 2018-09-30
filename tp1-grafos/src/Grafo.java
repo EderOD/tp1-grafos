@@ -123,6 +123,48 @@ public abstract class Grafo {
 			return false;
 		}
 	}
-	
+	public boolean isConexo() {
+		int vet[] = new int[tam-1];
+		int valida;
+		for(int i=0; i<this.tam; i++) {
+			//vet[i] = 0;
+			for(int j=0; j<this.tam; j++) {
+				if(j>i) {
+					if(this.arestas[i][j]!=null) {
+						vet[i] = vet[i] + this.arestas[i][j].size();
+					}
+				}
+			}
+		}
+		valida = 1;
+		for(int i=0; i<this.tam-1; i++) {
+			valida = valida * vet[i];
+			vet[i] = 0;
+		}
+		if(valida!=0) {
+			return true;
+		}
+		
+		for(int i=0; i<this.tam; i++) {
+			//vet[i] = 0;
+			for(int j=0; j<this.tam; j++) {
+				if(j>i) {
+					if(this.arestas[i][j]!=null) {
+						vet[j] = vet[j] + this.arestas[i][j].size();
+					}
+				}
+			}
+		}
+		valida = 1;
+		for(int i=0; i<this.tam-1; i++) {
+			valida = valida * vet[i];
+			vet[i] = 0;
+		}
+		if(valida!=0) {
+			return true;
+		}
+		return false;
+		
+	}
 
 }
