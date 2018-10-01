@@ -12,4 +12,10 @@ public class Aresta {
 	public int getPeso() {
 		return this.peso;
 	}
+	@Override
+	public String toString() {
+		return "peso=" + peso;
+	}
+	
+	
 }
