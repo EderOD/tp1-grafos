@@ -23,11 +23,11 @@ public class ex1 {
 			System.out.println("Isolado:\t"+f.isIsolado(1));
 			System.out.println("Pendente:\t"+f.isPendente(1));
 			System.out.println("Regular:\t"+f.isRegular());
-			System.out.println("Complementar:\t"+f.getComplementar().toString());
 			System.out.println("Completo:\t"+f.isCompleto());
 			System.out.println("Nulo:\t\t"+f.isNulo());
 			System.out.println("Adjacente:\t"+f.isAdjacente(1, 2));
-			System.out.println("Conexo:\t"+f.isConexo());
+			System.out.println("Conexo: \t"+f.isConexo());
+			System.out.println("\nComplementar:\t"+f.getComplementar().toString());
 		}
 
 	}
