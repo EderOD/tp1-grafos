@@ -8,7 +8,7 @@ public class ManipuladorFile {
 		Dirigido d = new Dirigido(0);
 		NaoDirigido f = new NaoDirigido(0);
 		int vertices = 0;					// numero de vertices no grafo
-		int inteiros[] = new int[4];		// vetor = [verticeU, verticeV, peso, direção]
+		int inteiros[] = new int[4];		// vetor = [vertice1, vertice2, peso, direção]
 		boolean criado = true;
 		boolean dirigido = true;
 		String aux = "";
