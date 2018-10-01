@@ -29,8 +29,7 @@ public class ex1 {
 			System.out.println("Adjacente:\t"+f.isAdjacente(1, 2));
 			System.out.println("Conexo:\t"+f.isConexo());
 		}
-		
-		
+
 	}
 
 }
