@@ -6,6 +6,7 @@ public class ex1 {
 		Grafo g = ManipuladorFile.ler("file.txt");
 		
 		System.out.println(g.getClass());
+		System.out.println(g.toString());
 //-------------------------------------------------------------------------
 //------Grafo Dirigido-----------------------------------------------------
 		if(g instanceof Dirigido) {
@@ -16,16 +17,17 @@ public class ex1 {
 		
 		
 //-------------------------------------------------------------------------
-//------Grafo Dirigido-----------------------------------------------------
+//------Grafo Nao Dirigido-----------------------------------------------------
 		if(g instanceof NaoDirigido) {
-			System.out.println("Isolado:\t"+g.isIsolado(1));
-			System.out.println("Pendente:\t"+g.isPendente(1));
-			System.out.println("Regular:\t"+g.isRegular());
-			System.out.println("Complementar:\t"+g.getComplementar());
-			System.out.println("Completo:\t"+g.isCompleto());
-			System.out.println("Nulo:\t\t"+g.isNulo());
-			System.out.println("Adjacente:\t"+g.isAdjacente(1, 2));
-			System.out.println("Conexo:\t"+g.isConexo());
+			NaoDirigido f = (NaoDirigido) g;
+			System.out.println("Isolado:\t"+f.isIsolado(1));
+			System.out.println("Pendente:\t"+f.isPendente(1));
+			System.out.println("Regular:\t"+f.isRegular());
+			System.out.println("Complementar:\t"+f.getComplementar().toString());
+			System.out.println("Completo:\t"+f.isCompleto());
+			System.out.println("Nulo:\t\t"+f.isNulo());
+			System.out.println("Adjacente:\t"+f.isAdjacente(1, 2));
+			System.out.println("Conexo:\t"+f.isConexo());
 		}
 		
 		
