@@ -93,7 +93,7 @@ public class NaoDirigido extends Grafo{
 	}
 	
 	public boolean isConexo() {
-		int vet[] = new int[getTam()-1];
+		int vet[] = new int[getTam()];
 		int valida;
 		for(int i=0; i<getTam(); i++) {
 			//vet[i] = 0;
